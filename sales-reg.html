@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: antiquewhite;
+    }
+    .container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+    }
+    .sidebar {
+      flex: 1;
+      height: 50vh;
+      border-right-width: 1px;
+      border-right-color: black;
+      border-right-style: solid;
+    }
+    .content {
+      flex: 3;
+    }
+    .input-container{
+        display: flex;
+    }
+    .input-section{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div>
+          <a href="dashboard.html">DASHBOARD</a>
+        </div>
+        <div>
+          <a href="supplierRegistration.html">SupplierRegistration</a>
+        </div>
+      </div>
+      <div class="content">
+        <form action="">
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="salesdate">Sales Date</label>
+                <input type="date" />
+              </div>
+              <div class="input-section">
+                <label for="salesPerson">Sales Person</label>
+                <select name="" id="">
+                  <option value="">select a representative</option>
+                  <option value="1">Mary Jane</option>
+                  <option value="2">John Doe</option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
